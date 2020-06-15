@@ -97,7 +97,7 @@ class LocalAuthority extends Component<
                   option?.children.toLowerCase().indexOf(input.toLowerCase()) >=
                   0
                 }
-                style={{ margin: "20px 0px 20px 20px" }}
+                style={{ margin: "20px 0px 0px 20px" }}
                 onChange={this.props.dailyLocalAuthorityRecords}
                 placeholder="Select date"
               >
@@ -111,7 +111,10 @@ class LocalAuthority extends Component<
             <Col xs={24} sm={24} md={24} lg={6} xl={6}>
               <Input
                 placeholder="Search local authority"
-                style={{ margin: "20px 0px 20px 0px" }}
+                style={{
+                  margin: "20px 20px 20px 20px",
+                  width: "-webkit-fill-available",
+                }}
                 suffix={<SearchOutlined />}
                 value={this.state.localAuthorityName}
                 onChange={this.handleLocalAuthoritySearch}
@@ -125,7 +128,7 @@ class LocalAuthority extends Component<
                 dataSource={this.state.filteredDailyRecords}
                 columns={this.props.columns}
                 pagination={false}
-                style={{ margin: "0px 0px 0px 20px" }}
+                style={{ margin: "0px 20px 0px 20px" }}
                 bordered
                 loading={this.props.loading}
                 summary={this.renderSummary}

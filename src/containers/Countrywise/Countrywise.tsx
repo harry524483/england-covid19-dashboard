@@ -131,35 +131,6 @@ class Countrywise extends Component<CountrywiseProps, {}> {
                 ))}
               </Select>
             </Col>
-            <Col span={8} offset={8}>
-              <Button
-                type="dashed"
-                value={DateRange.Beginning}
-                onClick={(event) =>
-                  this.props.handleDateRangeChange(event.currentTarget)
-                }
-              >
-                Beginning
-              </Button>
-              <Button
-                type="dashed"
-                value={DateRange.OneMonth}
-                onClick={(event) =>
-                  this.props.handleDateRangeChange(event.currentTarget)
-                }
-              >
-                1 Month
-              </Button>
-              <Button
-                type="dashed"
-                value={DateRange.TwoWeeks}
-                onClick={(event) =>
-                  this.props.handleDateRangeChange(event.currentTarget)
-                }
-              >
-                2 Weeks
-              </Button>
-            </Col>
           </Row>
           <Row>
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>
@@ -199,6 +170,38 @@ class Countrywise extends Component<CountrywiseProps, {}> {
                   },
                 }}
               />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={8}></Col>
+            <Col span={8} offset={8}>
+              <Button
+                type="dashed"
+                value={DateRange.Beginning}
+                onClick={(event) =>
+                  this.props.handleDateRangeChange(event.currentTarget)
+                }
+              >
+                Beginning
+              </Button>
+              <Button
+                type="dashed"
+                value={DateRange.OneMonth}
+                onClick={(event) =>
+                  this.props.handleDateRangeChange(event.currentTarget)
+                }
+              >
+                1 Month
+              </Button>
+              <Button
+                type="dashed"
+                value={DateRange.TwoWeeks}
+                onClick={(event) =>
+                  this.props.handleDateRangeChange(event.currentTarget)
+                }
+              >
+                2 Weeks
+              </Button>
             </Col>
           </Row>
         </Content>
