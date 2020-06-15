@@ -172,9 +172,8 @@ class Countrywise extends Component<CountrywiseProps, {}> {
               />
             </Col>
           </Row>
-          <Row>
-            <Col span={8}></Col>
-            <Col span={8} offset={8}>
+          <Row justify="center">
+            <Col lg={{ span: 9, offset: 15 }} xl={{ span: 8, offset: 16 }}>
               <Button
                 type="dashed"
                 value={DateRange.Beginning}
