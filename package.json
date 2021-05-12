@@ -13,7 +13,7 @@
     "@types/react-dom": "^16.9.0",
     "antd": "^4.3.3",
     "axios": "^0.19.2",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartjs-plugin-colorschemes": "^0.4.0",
     "chartjs-plugin-labels": "^1.1.0",
     "moment": "^2.26.0",
